@@ -1,10 +1,22 @@
 <?xml version="1.0"?>
 <odoo>
-<data>
 <!--eerste view -->
 
+<record id="estate_property_view_tree" model="ir.ui.view">
+    <field name="name">estate.property.view.tree</field>
+    <field name="res_model">estate.property</field>
+    <field name="arch" type="xml">
+        <tree string="Tests">
+            <field name="name"/>
+            <field name="last_seen"/>
+        </tree>
+</record>
+
+
+<!--eerste action -->
+
 <record id="estate_property_action" model="ir.actions.act_window">
-    <field name="name">My Test action</field>
+    <field name="name">estate.property.action</field>
     <field name="res_model">estate.property</field>
     <field name="view_mode">tree,form</field>
     <field name="help" type="html">
@@ -19,5 +31,4 @@
 </record>
 
 
-</data>
 </odoo>
