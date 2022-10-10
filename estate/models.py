@@ -3,9 +3,9 @@ from odoo import fields, models
 
 class Property(models.Model):
     _name = "estate.property"
-    _description = "Property Model"
+    _description = "Estate Property"
 
-    name = fields.Char(required=True)
+    name = fields.Char(required=True,default="pipikaka")
     description = fields.Text()
     postcode = fields.Char()    
     date_availability = fields.Date()
@@ -16,4 +16,6 @@ class Property(models.Model):
     facades = fields.Integer()
     garage = fields.Boolean()
     garden = fields.Boolean()
-    garden_area = fields.Integer()
+    garden_area = fields.Integer() 
+    last_seen = fields.Datetime("Last Seen", default=lambda self: fields.Datetime.now())
+    active = fields.Boolean('Active', default=True)
