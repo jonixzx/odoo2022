@@ -5,7 +5,6 @@
     "depends": ["base"],  # dependencies
     "data": [
         'ir.model.access.csv',
-         'estate_menus.xml'
     ],
     "installable": True,
     'license': 'LGPL-3',
