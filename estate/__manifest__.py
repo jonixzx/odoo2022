@@ -5,7 +5,8 @@
     "depends": ["base"],  # dependencies
     "data": [
         'ir.model.access.csv',
-        'estate_property_views.xml'
+        'estate_property_views.xml',
+        'estate_menus.xml'
     ],
     "installable": True,
     'license': 'LGPL-3',
