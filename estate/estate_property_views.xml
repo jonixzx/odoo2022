@@ -1,12 +1,23 @@
 <?xml version="1.0"?>
 <odoo>
+<data>
+<!--eerste view -->
 
 <record id="estate_property_action" model="ir.actions.act_window">
     <field name="name">My Test action</field>
     <field name="res_model">estate.property</field>
     <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+       een beetje helptekst
+       </p><p>
+       Use lost reasons to explain why an opportunity is lost.
+       </p><p>
+       Some examples of lost reasons: "We don't have people/skill", "Price too high"
+        </p>
+    </field>
 </record>
 
 
-
+</data>
 </odoo>
