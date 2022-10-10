@@ -17,8 +17,3 @@ class TestModel(models.Model):
     garage = fields.Boolean()
     garden = fields.Boolean()
     garden_area = fields.Integer()
-    garden_orientation = fields.Selection(
-        string='Type',
-        selection=[('north', 'North'), (south', 'South'),('east', 'East'), ('west', 'West')],
-        help="Kies aub")
-    active = fields.Boolean('Active', readonly=True)
