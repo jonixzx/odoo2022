@@ -2,7 +2,7 @@ from psycopg2 import Date
 from odoo import fields, models
 
 class Property(models.Model):
-    _name = "Property.model"
+    _name = "property.model"
     _description = "Test Model"
 
     name = fields.Char()
