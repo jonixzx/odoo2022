@@ -5,7 +5,7 @@ class Property(models.Model):
     _name = "estate.property"
     _description = "Estate Property"
 
-    name = fields.Char(required=True,default="pipikaka")
+    name = fields.Char(required=True,default="a house")
     description = fields.Text()
     postcode = fields.Char()    
     date_availability = fields.Date()
@@ -19,8 +19,8 @@ class Property(models.Model):
     garden_area = fields.Integer() 
     last_seen = fields.Datetime("Last Seen", default=lambda self: fields.Datetime.now())
     active = fields.Boolean('Active', default=True)
-''' property type, buyer and seller.  
-    type = fields.One2many('', 'position_id', string='Property Type', copy=True) '''
+''' property type, buyer and seller.  '''
+    type_id = fields.Many2one('property.type', string='Type',help="type of property.")
 
 
 
