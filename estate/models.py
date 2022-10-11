@@ -19,8 +19,7 @@ class Property(models.Model):
     garden_area = fields.Integer() 
     last_seen = fields.Datetime("Last Seen", default=lambda self: fields.Datetime.now())
     active = fields.Boolean('Active', default=True)
-''' property type, buyer and seller.  '''
-    type_id = fields.Many2one('property.type', string='Type',help="type of property.")
+'''type_id = fields.Many2one('property.type', string='Type',help="type of property.")'''
 
 
 
