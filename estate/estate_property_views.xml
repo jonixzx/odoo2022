@@ -41,14 +41,18 @@
             <field name="name" string="naam" />
             <field name="garden"/>
             <separator/>
-            <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+       ''''     <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
             <group expand="1" string="Group By">
                 <filter string="groepeer op Garden" name="garden" context="{'group_by':'garden', 'residual_visible':True}"/>
-            </group>
+            </group>'''
         </search>
     </field>
 </record>
 
-
+<record model="ir.actions.act_url" id="action_google_url">
+    <field name="name">Open google.com</field>
+    <field name="url">https://google.com</field>
+    <field name="target">new</field>
+</record>
 
 </odoo>

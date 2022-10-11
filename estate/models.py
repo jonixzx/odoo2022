@@ -19,3 +19,8 @@ class Property(models.Model):
     garden_area = fields.Integer() 
     last_seen = fields.Datetime("Last Seen", default=lambda self: fields.Datetime.now())
     active = fields.Boolean('Active', default=True)
+''' property type, buyer and seller.  
+    type = fields.One2many('', 'position_id', string='Property Type', copy=True) '''
+
+
+
