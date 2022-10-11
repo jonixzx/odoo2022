@@ -4,7 +4,7 @@
 <menuitem id="property_root_menu" name="Property" />
 <menuitem id="property_sub_menu" parent="property_root_menu" />
 <menuitem id="estate_property_action_menu" action="estate_property_action" parent="property_sub_menu"  />
-<menuitem parent="menu_parent" id="menu_google_url" action="action_google_url"/>
+<!-- <menuitem parent="menu_parent" id="menu_google_url" action="action_google_url"/> -->
 
 
 </odoo>

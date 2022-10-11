@@ -1,4 +1,3 @@
-from psycopg2 import Date
 from odoo import fields, models
 
 class Type(models.Model):
