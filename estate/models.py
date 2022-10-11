@@ -21,7 +21,10 @@ class Property(models.Model):
     active = fields.Boolean('Active', default=True)
 '''type_id = fields.Many2one('property.type', string='Type',help="type of property.")'''
 
-
+class Type(models.Model):
+    _name = "property.type"
+    _description = "type of the Property"
+    name = fields.Char(required=True,default="house")
 
 
 
