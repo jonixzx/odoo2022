@@ -33,4 +33,22 @@
 </record>
 
 
+<record id="estate_property_action_search" model="ir.ui.view">
+    <field name="name">estate.property.search</field>
+    <field name="model">estate.property</field>
+    <field name="arch" type="xml">
+        <search string="property naaaaam">
+            <field name="name" string="naam" />
+            <field name="property_name"/>
+            <separator/>
+            <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+            <group expand="1" string="Group By">
+                <filter string="Garden" name="garden" context="{'group_by':'property_garden', 'residual_visible':True}"/>
+            </group>
+        </search>
+    </field>
+</record>
+
+
+
 </odoo>
